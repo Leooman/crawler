@@ -1,4 +1,4 @@
-job-spider (cheerio)
+Job
 ===============
 
 a very simple crawler using cheerio.
@@ -6,28 +6,32 @@ a very simple crawler using cheerio.
 Detail
 ==================
 
-https://github.com/yonghenghao/job-spider
+https://github.com/yonghenghao/job
 
-Install
+````{data}
+var data={
+        position:position,
+        positionURL:positionURL,
+        company:company,
+        price:price,
+        address:address,
+        time:time,
+        detail:detail
+    }
+````
+
+Build & development
 ==================
 
 ```{bash}
-git clone git@github.com:yonghenghao/job-spider.git
-cd job-spider
+git clone git@github.com:yonghenghao/job.git
+cd job
 npm install
-node app.js
+DEBUG=my-application ./bin/www
 ```
-Data
+Running
 ===================
-````{data}
-var data={
-        position:position,           //职位
-        positionURL:positionURL,     //url地址
-        company:company,             //公司名字
-        price:price,                 //薪资
-        address:address,             //公司地址
-        time:time,                   //发布时间
-        detail:detail                //职位详情
-    }
-````
+> localhost:3000
+
+
 
