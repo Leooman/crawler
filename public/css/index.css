@@ -1,7 +1,0 @@
-table{border-collapse: collapse}
-td{max-width: 350px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;border: 1px solid #ccc;line-height: 30px}
-.red{color: #f00}
-.green{color: green}
-.bold{font-weight: bold}
-.purple{color: #00f}
-.focus{background: #ccc}
