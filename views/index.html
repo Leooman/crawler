@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <script src="/javascripts/angular.min.js"></script>
+</head>
+<body ng-app="demoApp">
+<div ng-controller="demoController">
+    <label>薪资查询：</label><input type="text" ng-model="key"/>
+    <table>
+        <tr ng-class="{{bold}}">
+            <td>序号</td>
+            <td>职位名称</td>
+            <td>公司名称</td>
+            <td>薪资范围</td>
+            <td>工作地址</td>
+            <td>发布日期</td>
+            <td>工作详情</td>
+        </tr>
+        <tr ng-repeat="item in data | limitTo:100 | filter:{price:key}" ng-class="{'red':a,'green':b,'focus':$index==focus}" ng-class-even="'purple'" ng-click="click($index)">
+            <td>{{$index+1}}</td>
+            <td><a href={{item.positionURL}}>{{item.position}}</a></td>
+            <td>{{item.company}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.time}}</td>
+            <td title={{item.detail}}>{{item.detail}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+<script>
+    angular.module('demoApp',[])
+            .controller('demoController',['$scope','$http',function($scope,$http){
+                $scope.key=''
+                $http.get('data.json').success(function(res){
+                    $scope.data=res
+                }).error(function(){
+                    console.log('error!')
+                })
+                $scope.count=0
+                $scope.$watch('key',function(){
+                    $scope.count++
+                })
+                $scope.bold='bold'
+                $scope.red='red'
+                $scope.focus=false
+                $scope.b=true
+                $scope.a=false
+                $scope.click=function(i){
+                    $scope.focus=i
+                }
+            }])
+</script>
