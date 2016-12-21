@@ -1,7 +1,9 @@
 Job
 ===============
 
-a very simple crawler using cheerio.
+A demo crawler using cheerio.
+
+This project is generated with express generator.
 
 Detail
 ==================
