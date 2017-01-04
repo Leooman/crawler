@@ -1,0 +1,42 @@
+@font:14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@a_color:#00B7FF;
+.common{
+  padding: 50px;
+  font: @font;
+}
+.td{
+  max-width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  line-height: 30px;
+}
+.color(@color){
+  color: @color;
+}
+.background(@back){
+  background: @back;
+}
+/*设置元素样式*/
+body{
+  .common;
+}
+a{
+  color: @a_color;
+}
+table{
+  border-collapse: collapse;
+  td{
+    .td;
+  }
+}
+.focus{
+  .background(#ccc)
+}
+.red{
+  .color(red)
+}
+.green{
+  .color(green)
+}
