@@ -8,7 +8,7 @@ This project is generated with express generator.
 Detail
 ==================
 
-https://github.com/yonghenghao/Node-JobCrawler
+https://github.com/Leooman/Node-JobCrawler
 
 ````{data}
 var data={
