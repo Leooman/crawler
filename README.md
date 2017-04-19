@@ -26,7 +26,7 @@ Build & development
 ==================
 
 ```{bash}
-git clone git@github.com:yonghenghao/Node-JobCrawler.git
+git clone git@github.com:Leooman/Node-JobCrawler.git
 cd Node-JobCrawler
 npm install
 DEBUG=my-application ./bin/www
