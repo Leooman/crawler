@@ -1,14 +1,14 @@
-Node-JobCrawler
+crawler
 ===============
 
-A demo job-crawler using cheerio.
+A demo crawler using cheerio.
 
 This project is generated with express generator.
 
 Detail
 ==================
 
-https://github.com/Leooman/Node-JobCrawler
+https://github.com/Leooman/crawler
 
 ````{data}
 var data={
@@ -26,8 +26,8 @@ Build & development
 ==================
 
 ```{bash}
-git clone git@github.com:Leooman/Node-JobCrawler.git
-cd Node-JobCrawler
+git clone git@github.com:Leooman/crawler.git
+cd crawler
 npm install
 DEBUG=my-application ./bin/www
 ```
