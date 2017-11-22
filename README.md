@@ -1,26 +1,14 @@
 crawler
 ===============
 
-A demo crawler using cheerio.
+A demo crawler get job message & images using cheerio&request.
 
 This project is generated with express generator.
 
-Detail
+Source Code
 ==================
 
 https://github.com/Leooman/crawler
-
-````{data}
-var data={
-        position:position,
-        positionURL:positionURL,
-        company:company,
-        price:price,
-        address:address,
-        time:time,
-        detail:detail
-    }
-````
 
 Build & development
 ==================
@@ -29,7 +17,7 @@ Build & development
 git clone git@github.com:Leooman/crawler.git
 cd crawler
 npm install
-DEBUG=my-application ./bin/www
+DEBUG=my-application ./bin/www || npm run start
 ```
 Running
 ===================

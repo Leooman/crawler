@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="/javascripts/angular.min.js"></script>
+    <script src="/javascripts/controllers.js"></script>
+    <script src="/javascripts/directives.js"></script>
+</head>
+<body ng-app='picApp' ng-controller='picController'>
+<div id="container">
+    <div class="box" ng-repeat='i in urls | limitTo:100' picture ng-transclude num='30'>
+        <div class="box_img">
+            <img ng-src="/images/{{i.address}}">
+        </div>
+    </div>
+</div>
+</body>
+</html>

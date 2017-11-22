@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.box{
+    padding: 5px;
+    float: left;
+    width: 212px;
+}
+.box_img{
+    padding: 5px;
+    border: 1px solid #cccccc;
+    box-shadow:0 0 5px #ccc;
+    border-radius: 5px;
+}
+.box_img img{
+    width: 200px;
+    height: 142px;
+}
+.more{
+    /*position: fixed;*/
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+}
