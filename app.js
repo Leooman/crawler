@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var home = require('./routes/index');
 var message = require('./routes/message');
 var image = require('./routes/image');
+var zige = require('./routes/zige');
 
 var app = express();
 
@@ -26,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', home);
 app.use('/message', message);
 app.use('/image', image);
+app.use('/zige', zige);
 
 
 /// catch 404 and forwarding to error handler
