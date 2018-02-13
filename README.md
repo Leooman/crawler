@@ -1,16 +1,19 @@
-crawler
+NodeJS实现爬虫
 ===============
 
-A demo crawler get job message & images using cheerio&request.
+用 cheerio&request 实现单页信息、图片资源、多层信息的爬取
 
-This project is generated with express generator.
+备注
+=======================
 
-Source Code
+代码示例中购房资格测试爬取到的信息保存到了数据库，数据结构参照根目录下的express.sql.example文件
+
+源码地址
 ==================
 
 https://github.com/Leooman/crawler
 
-Build & development
+使用
 ==================
 
 ```{bash}
@@ -19,7 +22,7 @@ cd crawler
 npm install
 DEBUG=my-application ./bin/www || npm run start
 ```
-Running
+测试地址
 ===================
 > localhost:3000
 

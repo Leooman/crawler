@@ -31,3 +31,28 @@
     text-align: center;
     
 }
+
+/*//////////////////////////////////////////*/
+.zige_item{
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+}
+.zige_item:hover,.zige_pro:hover{
+    background:#f4f4f4;
+}
+.zige_title{
+    text-align: center;
+    font-weight: bold;
+}
+.zige_pro{
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+}

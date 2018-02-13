@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<% if(row==0){ %>
+	<%for(var i=0; i<city.length; i++) { %>
+        <div class="col-xs-3 col-sm-2">
+        	<a class="zige_item" href="/ceshi/?cityname=<%=city[i].cityname %>&row=<%=row %>"><%=city[i].cityname %></a>
+        </div>
+    <% } %>
+<% } %>
+
+<% if(row==1){ %>
+	<div class="col-xs-10 col-sm-6 col-sm-offset-3 zige_title"><%=process[0].title %></div>
+    <%for(var i=0; i<process.length; i++) { %>
+        <div class="col-xs-10 col-sm-6 col-sm-offset-3">
+        	<a class="zige_pro" href="/ceshi/?cityname=<%=process[i].cityname %>&row=<%=process[i].nextRow %>&startNum=<%=process[i].nextStartNum%>&endNum=<%=process[i].nextEndNum%>"><%=process[i].field %></a>
+        </div>
+    <% } %>
+<% } %>
+
+<% if(row==2){ %>
+    <div class="col-xs-3 col-sm-2">
+    	<p class="result"></p>
+    	<ul>
+    		<%for(var i=0; i<conditions.length; i++) { %>
+    			<li><%=conditions[i]%></li>
+    		<% } %>
+    	</ul>
+    </div>
+    <a href="/ceshi" class="btn btn-default reset">再测一遍</a>
+    <script type="text/javascript">
+		$('.result').html(decodeURIComponent("<%=result %>"))
+	</script>
+<% } %>
+</body>
+</html>
