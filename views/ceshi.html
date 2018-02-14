@@ -25,15 +25,15 @@
 <% } %>
 
 <% if(row==2){ %>
-    <div class="col-xs-3 col-sm-2">
-    	<p class="result"></p>
-    	<ul>
-    		<%for(var i=0; i<conditions.length; i++) { %>
-    			<li><%=conditions[i]%></li>
-    		<% } %>
-    	</ul>
+	<h3 class="result zige_res"></h3>
+	<ul class="col-xs-10 col-sm-6 col-sm-offset-3">
+		<%for(var i=0; i<conditions.length; i++) { %>
+			<li class="zige_pro"><%=conditions[i]%></li>
+		<% } %>
+	</ul>
+    <div class="col-xs-10 col-sm-6 col-sm-offset-3">
+        <a href="/ceshi" class="btn btn-default reset">再测一遍</a>
     </div>
-    <a href="/ceshi" class="btn btn-default reset">再测一遍</a>
     <script type="text/javascript">
 		$('.result').html(decodeURIComponent("<%=result %>"))
 	</script>

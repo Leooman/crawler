@@ -56,3 +56,14 @@
     display: block;
     cursor: pointer;
 }
+.zige_res{
+    color: #f00;
+    text-align: center;
+}
+.zige_res span{
+    display: block;
+}
+.reset{
+    display: block;
+    margin: 10px;
+}
