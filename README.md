@@ -1,30 +1,12 @@
-NodeJS实现爬虫
+node.js爬取图集
 ===============
 
-用 cheerio&request 实现单页信息、图片资源、多层信息的爬取
+结合 cheerio + axios 爬取整个图集并下载到本地
 
-备注
-=======================
+执行*npm run start*运行
 
-代码示例中购房资格测试爬取到的信息保存到了数据库，数据结构参照根目录下的express.sql.example文件
+<img src="./pic/1.png" alt="爬取中" style="zoom:50%;" />
 
-源码地址
-==================
+<img src="./pic/2.png" alt="爬取完成" style="zoom:50%;" />
 
-https://github.com/Leooman/crawler
-
-使用
-==================
-
-```{bash}
-git clone git@github.com:Leooman/crawler.git
-cd crawler
-npm install
-DEBUG=my-application ./bin/www || npm run start
-```
-测试地址
-===================
-> localhost:3000
-
-
-
+<img src="./pic/3.png" alt="下载到本地" style="zoom:50%;" />
